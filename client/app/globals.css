@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --cyan: #00F5FF;
+    --gold: #FFD700;
+    --surface: #0A0A0F;
+    --surface-1: #111118;
+    --surface-2: #1A1A24;
+    --surface-3: #22222F;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--surface);
+    color: #fff;
+    font-family: var(--font-display), 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--surface-1); }
+  ::-webkit-scrollbar-thumb { background: var(--cyan); border-radius: 2px; }
+
+  /* Selection */
+  ::selection { background: #00F5FF33; color: var(--cyan); }
+}
+
+@layer components {
+  /* CRT scanline overlay */
+  .scanlines {
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.03) 2px,
+      rgba(0, 0, 0, 0.03) 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* Neon text glow */
+  .text-glow-cyan {
+    color: var(--cyan);
+    text-shadow: 0 0 10px #00F5FF88, 0 0 30px #00F5FF44;
+  }
+
+  .text-glow-gold {
+    color: var(--gold);
+    text-shadow: 0 0 10px #FFD70088, 0 0 30px #FFD70044;
+  }
+
+  /* Neon border */
+  .border-glow {
+    border: 1px solid var(--cyan);
+    box-shadow: 0 0 10px #00F5FF33, inset 0 0 10px #00F5FF11;
+  }
+
+  .border-glow-gold {
+    border: 1px solid var(--gold);
+    box-shadow: 0 0 10px #FFD70033, inset 0 0 10px #FFD70011;
+  }
+
+  /* Glassmorphism card */
+  .glass-card {
+    background: rgba(17, 17, 24, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  /* Cyber button */
+  .btn-cyber {
+    @apply relative px-6 py-3 font-display font-semibold tracking-widest uppercase text-sm;
+    color: #000;
+    background: var(--cyan);
+    clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+    transition: all 0.2s ease;
+  }
+  .btn-cyber:hover {
+    background: #fff;
+    box-shadow: 0 0 20px #00F5FF88;
+  }
+
+  .btn-outline-cyber {
+    @apply relative px-6 py-3 font-display font-semibold tracking-widest uppercase text-sm;
+    color: var(--cyan);
+    background: transparent;
+    border: 1px solid var(--cyan);
+    clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+    transition: all 0.2s ease;
+  }
+  .btn-outline-cyber:hover {
+    background: var(--cyan);
+    color: #000;
+    box-shadow: 0 0 20px #00F5FF66;
+  }
+
+  /* Badge pill */
+  .badge-pill {
+    @apply inline-flex items-center gap-1 px-3 py-1 text-xs font-mono font-bold uppercase tracking-widest rounded-none;
+    clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%);
+  }
+
+  /* Scarcity bar */
+  .scarcity-bar {
+    @apply h-1 rounded-full overflow-hidden bg-surface-3;
+  }
+
+  /* Animated grid background */
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-display), 'Rajdhani', sans-serif; }
+  .font-mono { font-family: var(--font-mono), 'Space Mono', monospace; }
+}
