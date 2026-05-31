@@ -1,21 +1,17 @@
 name: ARLON CI/CD Deploy
 
-# GitHub Actions qachon ishga tushsin?
 on:
   push:
-    branches: [ main ] # main branchga kod push bo'lganda avtomat ishlaydi
+    branches: [ main ]
 
 jobs:
   deploy:
-    runs-down: ubuntu-latest
     runs-on: ubuntu-latest
 
     steps:
-      # 1. GitHub'dagi eng oxirgi kodimizni Actions virtual mashinasiga yuklab oladi
       - name: Checkout repository code
         uses: actions/checkout@v4
 
-      # 2. Boya biz sozlagan SSH kalitlar orqali Hetzner serverimizga ulanib buyruqlarni bajaradi
       - name: Deploying to Hetzner VPS via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
@@ -23,15 +19,19 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            # Loyha papkasiga kiramiz
-            cd ~/ARLON
+            # Loyha papkasiga kiramiz (agar papka bo'lsa)
+            cd ~/ARLON || mkdir -p ~/ARLON && cd ~/ARLON
             
-            # GitHub'dan eng yangi kodlarni tortib olamiz
-            git pull origin main
+            # Agar papka yangi bo'lsa va git sozlanmagan bo'lsa deb tekshiramiz
+            if [ ! -d ".git" ]; then
+              git clone https://github.com/rosegaipnazarova/ARLON.git .
+            else
+              git pull origin main
+            fi
             
-            # PM2 da ishlab turgan eski qo'lda yoqilgan jarayonlar Docker portlariga xalaqit bermasligi uchun ularni to'xtatamiz
+            # PM2 ishlab turgan bo'lsa to'xtatamiz
             pm2 stop all || true
             
-            # Docker Compose orqali loyihalarni backgroundda (fonda) qaytadan build qilib yurgizamiz
-            docker compose down
+            # Docker konteynerlarini yangilaymiz
+            docker compose down || true
             docker compose up -d --build
