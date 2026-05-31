@@ -1,0 +1,1650 @@
+Microsoft Windows [Version 10.0.22621.1992]
+(c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+C:\Users\user>ssh root@116.203.110.119
+The authenticity of host '116.203.110.119 (116.203.110.119)' can't be established.
+ED25519 key fingerprint is SHA256:Zfu6FyHBHTUWV50x0L8fkrK1L0guMFSXUM4Jmir/HCs.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '116.203.110.119' (ED25519) to the list of known hosts.
+root@116.203.110.119's password:
+You are required to change your password immediately (administrator enforced).
+You are required to change your password immediately (administrator enforced).
+Welcome to Ubuntu 26.04 LTS (GNU/Linux 7.0.0-15-generic aarch64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed May 20 03:41:23 AM UTC 2026
+
+  System load:  0.21              Processes:             129
+  Usage of /:   3.6% of 37.22GB   Users logged in:       0
+  Memory usage: 5%                IPv4 address for eth0: 116.203.110.119
+  Swap usage:   0%                IPv6 address for eth0: 2a01:4f8:1c19:80d7::1
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+WARNING: Your password has expired.
+You must change your password now and log in again!
+New password:
+Retype new password:
+passwd: password updated successfully
+Connection to 116.203.110.119 closed.
+
+C:\Users\user>ssh root@116.203.110.119
+root@116.203.110.119's password:
+Welcome to Ubuntu 26.04 LTS (GNU/Linux 7.0.0-15-generic aarch64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed May 20 03:43:10 AM UTC 2026
+
+  System load:  0.25              Processes:             129
+  Usage of /:   3.7% of 37.22GB   Users logged in:       0
+  Memory usage: 6%                IPv4 address for eth0: 116.203.110.119
+  Swap usage:   0%                IPv6 address for eth0: 2a01:4f8:1c19:80d7::1
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Wed May 20 03:41:24 2026 from 213.230.86.65
+root@ubuntu-4gb-nbg1-1:~# apt update && apt upgrade -y
+Get:1 https://mirror.hetzner.com/ubuntu-ports/packages resolute InRelease [136 kB]
+Get:2 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates InRelease [136 kB]
+Get:3 https://mirror.hetzner.com/ubuntu-ports/packages resolute-backports InRelease [136 kB]
+Get:4 https://mirror.hetzner.com/ubuntu-ports/security resolute-security InRelease [136 kB]
+Get:5 https://mirror.hetzner.com/ubuntu-ports/packages resolute/main arm64 Packages [1,468 kB]
+Get:6 https://mirror.hetzner.com/ubuntu-ports/packages resolute/main Translation-en [524 kB]
+Get:7 https://mirror.hetzner.com/ubuntu-ports/packages resolute/main arm64 c-n-f Metadata [32.2 kB]
+Get:8 https://mirror.hetzner.com/ubuntu-ports/packages resolute/universe arm64 Packages [16.2 MB]
+Get:9 https://mirror.hetzner.com/ubuntu-ports/packages resolute/universe Translation-en [6,329 kB]
+Get:10 https://mirror.hetzner.com/ubuntu-ports/packages resolute/universe arm64 c-n-f Metadata [306 kB]
+Get:11 https://mirror.hetzner.com/ubuntu-ports/packages resolute/restricted arm64 Packages [187 kB]
+Get:12 https://mirror.hetzner.com/ubuntu-ports/packages resolute/restricted Translation-en [25.8 kB]
+Get:13 https://mirror.hetzner.com/ubuntu-ports/packages resolute/restricted arm64 c-n-f Metadata [376 B]
+Get:14 https://mirror.hetzner.com/ubuntu-ports/packages resolute/multiverse arm64 Packages [245 kB]
+Get:15 https://mirror.hetzner.com/ubuntu-ports/packages resolute/multiverse Translation-en [127 kB]
+Get:16 https://mirror.hetzner.com/ubuntu-ports/packages resolute/multiverse arm64 c-n-f Metadata [7,076 B]
+Get:17 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates/main arm64 Packages [79.6 kB]
+Get:18 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates/main Translation-en [24.2 kB]
+Get:19 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates/main arm64 c-n-f Metadata [1,132 B]
+Get:20 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates/universe arm64 Packages [40.6 kB]
+Get:21 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates/universe Translation-en [13.3 kB]
+Get:22 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates/universe arm64 c-n-f Metadata [624 B]
+Get:23 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates/restricted arm64 Packages [190 kB]
+Get:24 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates/restricted Translation-en [25.2 kB]
+Get:25 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates/restricted arm64 c-n-f Metadata [116 B]
+Get:26 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates/multiverse arm64 c-n-f Metadata [116 B]
+Get:27 https://mirror.hetzner.com/ubuntu-ports/packages resolute-backports/main arm64 c-n-f Metadata [112 B]
+Get:28 https://mirror.hetzner.com/ubuntu-ports/packages resolute-backports/universe arm64 c-n-f Metadata [116 B]
+Get:29 https://mirror.hetzner.com/ubuntu-ports/packages resolute-backports/restricted arm64 c-n-f Metadata [120 B]
+Get:30 https://mirror.hetzner.com/ubuntu-ports/packages resolute-backports/multiverse arm64 c-n-f Metadata [120 B]
+Get:31 https://mirror.hetzner.com/ubuntu-ports/security resolute-security/main arm64 Packages [52.5 kB]
+Get:32 https://mirror.hetzner.com/ubuntu-ports/security resolute-security/main Translation-en [19.1 kB]
+Get:33 https://mirror.hetzner.com/ubuntu-ports/security resolute-security/main arm64 c-n-f Metadata [968 B]
+Get:34 https://mirror.hetzner.com/ubuntu-ports/security resolute-security/universe arm64 Packages [40.6 kB]
+Get:35 https://mirror.hetzner.com/ubuntu-ports/security resolute-security/universe Translation-en [13.3 kB]
+Get:36 https://mirror.hetzner.com/ubuntu-ports/security resolute-security/universe arm64 c-n-f Metadata [628 B]
+Get:37 https://mirror.hetzner.com/ubuntu-ports/security resolute-security/restricted arm64 Packages [46.3 kB]
+Get:38 https://mirror.hetzner.com/ubuntu-ports/security resolute-security/restricted Translation-en [5,228 B]
+Get:39 https://mirror.hetzner.com/ubuntu-ports/security resolute-security/restricted arm64 c-n-f Metadata [120 B]
+Get:40 https://mirror.hetzner.com/ubuntu-ports/security resolute-security/multiverse arm64 c-n-f Metadata [120 B]
+Fetched 26.6 MB in 2s (11.2 MB/s)
+All packages are up to date.
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+root@ubuntu-4gb-nbg1-1:~# apt install -y nodejs
+Installing:
+  nodejs
+
+Installing dependencies:
+  libada-url0-3  libnode127     node-acorn            node-cjs-module-lexer  node-llhttp     node-ms      node-xtend
+  libcares2      libsimdjson29  node-balanced-match   node-corepack          node-lru-cache  node-semver  nodejs-doc
+  libllhttp9.3   libsimdutf31   node-brace-expansion  node-debug             node-minimatch  node-undici
+
+Suggested packages:
+  npm
+
+Summary:
+  Upgrading: 0, Installing: 21, Removing: 0, Not Upgrading: 0
+  Download size: 24.8 MB
+  Space needed: 99.5 MB / 36.6 GB available
+
+Get:1 https://mirror.hetzner.com/ubuntu-ports/packages resolute/main arm64 libsimdutf31 arm64 8.0.0-1 [62.1 kB]
+Get:2 https://mirror.hetzner.com/ubuntu-ports/packages resolute/universe arm64 libada-url0-3 arm64 3.4.3-1 [222 kB]
+Get:3 https://mirror.hetzner.com/ubuntu-ports/packages resolute/main arm64 libcares2 arm64 1.34.6-1 [100 kB]
+Get:4 https://mirror.hetzner.com/ubuntu-ports/packages resolute/universe arm64 libllhttp9.3 arm64 9.3.3~really9.3.0+~cs1Selecting previously unselected package nodejs-doc.
+Preparing to unpack …/20-nodejs-doc_22.22.1+dfsg+~cs22.19.15-1ubuntu1_all.deb…
+Unpacking nodejs-doc (22.22.1+dfsg+~cs22.19.15-1ubuntu1)…
+Setting up node-lru-cache (10.0.1-3)…
+Setting up node-cjs-module-lexer (1.2.3+dfsg-1)…
+Setting up libsimdutf31:arm64 (8.0.0-1)…
+Setting up libsimdjson29:arm64 (4.2.4-1)…
+Setting up node-balanced-match (2.0.0-1)…
+Setting up node-brace-expansion (2.0.1+~1.1.0-2)…
+Setting up libcares2:arm64 (1.34.6-1)…
+Setting up libllhttp9.3 (9.3.3~really9.3.0+~cs12.11.8-3build1)…
+Setting up nodejs-doc (22.22.1+dfsg+~cs22.19.15-1ubuntu1)…
+Setting up libada-url0-3:arm64 (3.4.3-1)…
+Setting up node-minimatch (9.0.3-6)…
+Setting up node-xtend (4.0.2-3)…
+Setting up node-acorn (8.16.0+ds+~cs25.18.7-4)…
+Setting up libnode127:arm64 (22.22.1+dfsg+~cs22.19.15-1ubuntu1)…
+Setting up node-corepack (0.24.0-5build1)…
+Setting up nodejs (22.22.1+dfsg+~cs22.19.15-1ubuntu1)…
+update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+Setting up node-ms (2.1.3+~cs0.7.31-3)…
+Setting up node-semver (7.6.1+~7.5.8-2)…
+Setting up node-debug (4.4.3+~4.1.13-1)…
+Setting up node-llhttp (9.3.3~really9.3.0+~cs12.11.8-3build1)…
+Setting up node-undici (7.18.2+dfsg+~cs3.2.0-1build1)…
+Processing triggers for libc-bin (2.43-2ubuntu2)…
+Processing triggers for man-db (2.13.1-1build1)…
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date (ABI upgrades are not detected).
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ubuntu-4gb-nbg1-1:~# npm -v
+Command 'npm' not found, but can be installed with:
+apt install npm
+root@ubuntu-4gb-nbg1-1:~# node -v
+v22.22.1
+root@ubuntu-4gb-nbg1-1:~# npm install -g npm@latest
+Command 'npm' not found, but can be installed with:
+apt install npm
+root@ubuntu-4gb-nbg1-1:~# npm install -g pm2
+Command 'npm' not found, but can be installed with:
+apt install npm
+root@ubuntu-4gb-nbg1-1:~# git clone https://github.com/rosegaipnazarova/ARLON.git
+Cloning into 'ARLON'...
+remote: Enumerating objects: 93, done.
+remote: Counting objects: 100% (93/93), done.
+remote: Compressing objects: 100% (71/71), done.
+remote: Total 93 (delta 6), reused 92 (delta 5), pack-reused 0 (from 0)
+Receiving objects: 100% (93/93), 98.83 KiB | 14.12 MiB/s, done.
+Resolving deltas: 100% (6/6), done.
+root@ubuntu-4gb-nbg1-1:~# cd ARLON
+root@ubuntu-4gb-nbg1-1:~/ARLON# ls -la
+total 36
+drwxr-xr-x 5 root root 4096 May 20 03:50 .
+drwx------ 5 root root 4096 May 20 03:50 ..
+drwxr-xr-x 7 root root 4096 May 20 03:50 .git
+-rw-r--r-- 1 root root   64 May 20 03:50 .gitignore
+-rw-r--r-- 1 root root 8217 May 20 03:50 README.md
+drwxr-xr-x 6 root root 4096 May 20 03:50 client
+drwxr-xr-x 7 root root 4096 May 20 03:50 server
+root@ubuntu-4gb-nbg1-1:~/ARLON# cd server
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# npm install
+Command 'npm' not found, but can be installed with:
+
+
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# npm run build
+Command 'npm' not found, but can be installed with:
+apt install npm
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# pm2 start dist/main.js --name "arlon-backend"
+Command 'pm2' not found, did you mean:
+  command 'gm2' from deb gm2 (4:15.2.0-5ubuntu1)
+  command 'tpm2' from deb tpm2-tools (5.7-1build1)
+  command 'pm' from deb powerman (2.4.4-5build1)
+  command 'pmc' from deb linuxptp (4.4-0ubuntu1)
+  command 'pmg' from deb python3-pymatgen (2025.10.7+dfsg1-1ubuntu2)
+  command 'pom2' from deb libpod-pom-perl (2.01-4)
+  command 'wm2' from deb wm2 (4+svn20090216-4.1)
+  command 'pmw' from deb pmw (1:5.22-1build1)
+  command 'pms' from deb pms (0.42-2)
+Try: apt install <deb name>
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# sudo apt install -y gnupg curl && curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | sudo apt-key add - && echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.get/mongodb-org-7.0.list && sudo apt update && sudo apt install -y mongodb-org && sudo systemctl start mongod && sudo systemctl enable mongod
+gnupg is already the newest version (2.4.8-4ubuntu3).
+curl is already the newest version (8.18.0-1ubuntu2.1).
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 0
+sudo: 'apt-key': command not found
+curl: Failed writing body
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# sudo systemctl status mongod
+Unit mongod.service could not be found.
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# client_loop: send disconnect: Connection reset
+
+C:\Users\user>ssh root@116.203.110.119
+root@116.203.110.119's password:
+Permission denied, please try again.
+root@116.203.110.119's password:
+Permission denied, please try again.
+root@116.203.110.119's password:
+Welcome to Ubuntu 26.04 LTS (GNU/Linux 7.0.0-15-generic aarch64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sun May 31 05:55:58 AM UTC 2026
+
+  System load:  0.27              Processes:             127
+  Usage of /:   5.2% of 37.22GB   Users logged in:       0
+  Memory usage: 7%                IPv4 address for eth0: 116.203.110.119
+  Swap usage:   0%                IPv6 address for eth0: 2a01:4f8:1c19:80d7::1
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+root@ubuntu-4gb-nbg1-1:~# curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo: preserving the entire environment is not supported, '-E' is ignored
+2026-05-31 05:56:44 - Installing pre-requisites
+Hit:1 https://mirror.hetzner.com/ubuntu-ports/packages resolute InRelease
+Hit:2 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates InRelease
+Hit:3 https://mirror.hetzner.com/ubuntu-ports/packages resolute-backports InRelease
+Hit:4 https://mirror.hetzner.com/ubuntu-ports/security resolute-security InRelease
+All packages are up to date.
+ca-certificates is already the newest version (20260223).
+ca-certificates set to manually installed.
+curl is already the newest version (8.18.0-1ubuntu2.1).
+gnupg is already the newest version (2.4.8-4ubuntu3).
+Installing:
+  apt-transport-https
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 0
+  Download size: 3,928 B
+  Space needed: 36.9 kB / 36.2 GB available
+
+Get:1 https://mirror.hetzner.com/ubuntu-ports/packages resolute/universe arm64 apt-transport-https all 3.2.0 [3,928 B]
+Fetched 3,928 B in 0s (40.3 kB/s)
+Selecting previously unselected package apt-transport-https.
+(Reading database… 56870 files and directories currently installed.)
+Preparing to unpack …/apt-transport-https_3.2.0_all.deb…
+Unpacking apt-transport-https (3.2.0)…
+Setting up apt-transport-https (3.2.0)…
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date (ABI upgrades are not detected).
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Get:1 https://deb.nodesource.com/node_22.x nodistro InRelease [12.1 kB]
+Hit:2 https://mirror.hetzner.com/ubuntu-ports/packages resolute InRelease
+Hit:3 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates InRelease
+Hit:4 https://mirror.hetzner.com/ubuntu-ports/packages resolute-backports InRelease
+ node-llhttp depends on node-debug.
+
+Removing node-debug (4.4.3+~4.1.13-1)…
+dpkg: node-corepack: dependency problems, but removing anyway as you requested:
+ nodejs depends on node-corepack.
+
+Removing node-corepack (0.24.0-5build1)…
+dpkg: node-acorn: dependency problems, but removing anyway as you requested:
+ libnode127:arm64 depends on node-acorn (>= 8.16.0~).
+
+Removing node-acorn (8.16.0+ds+~cs25.18.7-4)…
+dpkg: libnode127:arm64: dependency problems, but removing anyway as you requested:
+ nodejs depends on libnode127 (= 22.22.1+dfsg+~cs22.19.15-1ubuntu1).
+
+Removing libnode127:arm64 (22.22.1+dfsg+~cs22.19.15-1ubuntu1)…
+dpkg: node-llhttp: dependency problems, but removing anyway as you requested:
+ node-undici depends on node-llhttp (>= 9.3.3~really9.3.0~).
+
+Removing node-llhttp (9.3.3~really9.3.0+~cs12.11.8-3build1)…
+(Reading database… 55705 files and directories currently installed.)
+Preparing to unpack …/nodejs_22.22.2-1nodesource1_arm64.deb…
+Unpacking nodejs (22.22.2-1nodesource1) over (22.22.1+dfsg+~cs22.19.15-1ubuntu1)…
+(Reading database… 61467 files and directories currently installed.)
+Removing node-undici (7.18.2+dfsg+~cs3.2.0-1build1)…
+Setting up nodejs (22.22.2-1nodesource1)…
+Processing triggers for libc-bin (2.43-2ubuntu2)…
+Processing triggers for man-db (2.13.1-1build1)…
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date (ABI upgrades are not detected).
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ubuntu-4gb-nbg1-1:~# node -v
+npm -v
+v22.22.2
+10.9.7
+root@ubuntu-4gb-nbg1-1:~# npm install -g pm2
+
+added 90 packages in 6s
+
+8 packages are looking for funding
+  run `npm fund` for details
+npm notice
+npm notice New major version of npm available! 10.9.7 -> 11.16.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.16.0
+npm notice To update run: npm install -g npm@11.16.0
+npm notice
+root@ubuntu-4gb-nbg1-1:~# curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | sudo gpg --dearmor -o /usr/share/keyrings/mongodb-server-7.0.gpg
+root@ubuntu-4gb-nbg1-1:~# echo "deb [ types=deb arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+deb [ types=deb arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/7.0 multiverse
+root@ubuntu-4gb-nbg1-1:~# sudo apt update && sudo apt install -y mongodb-org
+Hit:1 https://mirror.hetzner.com/ubuntu-ports/packages resolute InRelease
+Hit:2 https://deb.nodesource.com/node_22.x nodistro InRelease
+Hit:3 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates InRelease
+Hit:4 https://mirror.hetzner.com/ubuntu-ports/packages resolute-backports InRelease
+Hit:5 https://mirror.hetzner.com/ubuntu-ports/security resolute-security InRelease
+Ign:6 https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/7.0 InRelease
+Err:7 https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/7.0 Release
+  404  Not Found [IP: 2600:9000:26e8:5400:0:bd83:86c0:93a1 443]
+Error: The repository 'https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/7.0 Release' does not have a Release file.
+Notice: Updating from such a repository can't be done securely, and is therefore disabled by default.
+Notice: See apt-secure(8) manpage for repository creation and user configuration details.
+root@ubuntu-4gb-nbg1-1:~# sudo systemctl start mongod && sudo systemctl enable mongod
+Failed to start mongod.service: Unit mongod.service not found.
+root@ubuntu-4gb-nbg1-1:~# rm /etc/apt/sources.list.d/mongodb-org-7.0.list
+root@ubuntu-4gb-nbg1-1:~# echo "deb [ types=deb arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+deb [ types=deb arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse
+root@ubuntu-4gb-nbg1-1:~# sudo apt update
+Hit:1 https://deb.nodesource.com/node_22.x nodistro InRelease
+Hit:2 https://mirror.hetzner.com/ubuntu-ports/packages resolute InRelease
+Hit:3 https://mirror.hetzner.com/ubuntu-ports/packages resolute-updates InRelease
+Hit:4 https://mirror.hetzner.com/ubuntu-ports/packages resolute-backports InRelease
+Hit:5 https://mirror.hetzner.com/ubuntu-ports/security resolute-security InRelease
+Get:6 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 InRelease [3,005 B]
+Get:7 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0/multiverse arm64 Packages [114 kB]
+Get:8 https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0/multiverse amd64 Packages [116 kB]
+Fetched 233 kB in 1s (331 kB/s)
+All packages are up to date.
+root@ubuntu-4gb-nbg1-1:~# sudo apt install -y mongodb-org
+The following packages were automatically installed and are no longer required:
+  libada-url0-3  libllhttp9.3   libsimdutf31         node-brace-expansion   node-lru-cache  node-xtend
+  libcares2      libsimdjson29  node-balanced-match  node-cjs-module-lexer  node-minimatch
+Use 'sudo apt autoremove' to remove them.
+
+Installing:
+Preparing to unpack …/3-mongodb-org-server_7.0.34_arm64.deb…
+Unpacking mongodb-org-server (7.0.34)…
+Selecting previously unselected package mongodb-org-mongos.
+Preparing to unpack …/4-mongodb-org-mongos_7.0.34_arm64.deb…
+Unpacking mongodb-org-mongos (7.0.34)…
+Selecting previously unselected package mongodb-org-database-tools-extra.
+Preparing to unpack …/5-mongodb-org-database-tools-extra_7.0.34_arm64.deb…
+Unpacking mongodb-org-database-tools-extra (7.0.34)…
+Selecting previously unselected package mongodb-org-database.
+Preparing to unpack …/6-mongodb-org-database_7.0.34_arm64.deb…
+Unpacking mongodb-org-database (7.0.34)…
+Selecting previously unselected package mongodb-org-tools.
+Preparing to unpack …/7-mongodb-org-tools_7.0.34_arm64.deb…
+Unpacking mongodb-org-tools (7.0.34)…
+Selecting previously unselected package mongodb-org.
+Preparing to unpack …/8-mongodb-org_7.0.34_arm64.deb…
+Unpacking mongodb-org (7.0.34)…
+Setting up mongodb-mongosh (2.8.3)…
+Setting up mongodb-org-server (7.0.34)…
+Setting up mongodb-org-shell (7.0.34)…
+Setting up mongodb-database-tools (100.17.0)…
+Setting up mongodb-org-mongos (7.0.34)…
+Setting up mongodb-org-database-tools-extra (7.0.34)…
+Setting up mongodb-org-database (7.0.34)…
+Setting up mongodb-org-tools (7.0.34)…
+Setting up mongodb-org (7.0.34)…
+Processing triggers for man-db (2.13.1-1build1)…
+Scanning processes...
+Scanning linux images...
+
+Running kernel seems to be up-to-date (ABI upgrades are not detected).
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ubuntu-4gb-nbg1-1:~# sudo systemctl start mongod
+root@ubuntu-4gb-nbg1-1:~# sudo systemctl enable mongod
+Created symlink '/etc/systemd/system/multi-user.target.wants/mongod.service' → '/usr/lib/systemd/system/mongod.service'.
+root@ubuntu-4gb-nbg1-1:~# sudo systemctl status mongod
+● mongod.service - MongoDB Database Server
+     Loaded: loaded (/usr/lib/systemd/system/mongod.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-05-31 06:01:13 UTC; 19s ago
+ Invocation: fafdd71f9cb244f68bcbf76431912b94
+       Docs: https://docs.mongodb.org/manual
+   Main PID: 225162 (mongod)
+     Memory: 73.7M (peak: 73.7M)
+        CPU: 909ms
+     CGroup: /system.slice/mongod.service
+             └─225162 /usr/bin/mongod --config /etc/mongod.conf
+
+May 31 06:01:13 ubuntu-4gb-nbg1-1 systemd[1]: Started mongod.service - MongoDB Database Server.
+May 31 06:01:13 ubuntu-4gb-nbg1-1 mongod[225162]: {"t":{"$date":"2026-05-31T06:01:13.225Z"},"s":"I",  "c":"CONTROL",  ">
+root@ubuntu-4gb-nbg1-1:~# cd ~/ARLON/server
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# pm2 start index.js --name "arlon-backend"
+
+                        -------------
+
+__/\\\\\\\\\\\\\____/\\\\____________/\\\\____/\\\\\\\\\_____
+ _\/\\\/////////\\\_\/\\\\\\________/\\\\\\__/\\\///////\\\___
+  _\/\\\_______\/\\\_\/\\\//\\\____/\\\//\\\_\///______\//\\\__
+   _\/\\\\\\\\\\\\\/__\/\\\\///\\\/\\\/_\/\\\___________/\\\/___
+    _\/\\\/////////____\/\\\__\///\\\/___\/\\\________/\\\//_____
+     _\/\\\_____________\/\\\____\///_____\/\\\_____/\\\//________
+      _\/\\\_____________\/\\\_____________\/\\\___/\\\/___________
+       _\/\\\_____________\/\\\_____________\/\\\__/\\\\\\\\\\\\\\\_
+        _\///______________\///______________\///__\///////////////__
+
+
+                          Runtime Edition
+
+        PM2 is a Production Process Manager for Node.js applications
+                     with a built-in Load Balancer.
+
+                Start and Daemonize any application:
+                $ pm2 start app.js
+
+                Load Balance 4 instances of api.js:
+                $ pm2 start api.js -i 4
+
+                Monitor in production:
+                $ pm2 monitor
+
+                Make pm2 auto-boot at server restart:
+                $ pm2 startup
+
+                To go further checkout:
+                http://pm2.io/
+
+
+                        -------------
+
+[PM2] Spawning PM2 daemon with pm2_home=/root/.pm2
+[PM2] PM2 Successfully daemonized
+[PM2] Starting /root/ARLON/server/index.js in fork_mode (1 instance)
+[PM2] Done.
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ arlon-backend      │ fork     │ 0    │ online    │ 0%       │ 35.3mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# cd ~/ARLON
+root@ubuntu-4gb-nbg1-1:~/ARLON# cd client
+root@ubuntu-4gb-nbg1-1:~/ARLON/client# npm install
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: @monogrid/gainmap-js@3.4.0
+npm warn Found: three@0.155.0
+npm warn node_modules/three
+npm warn   three@"^0.155.0" from the root project
+npm warn   10 more (@react-spring/three, @react-three/drei, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer three@">= 0.159.0" from @monogrid/gainmap-js@3.4.0
+npm warn node_modules/@react-three/drei/node_modules/@monogrid/gainmap-js
+npm warn   @monogrid/gainmap-js@"^3.0.6" from @react-three/drei@9.122.0
+npm warn   node_modules/@react-three/drei
+npm warn
+npm warn Conflicting peer dependency: three@0.184.0
+npm warn node_modules/three
+npm warn   peer three@">= 0.159.0" from @monogrid/gainmap-js@3.4.0
+npm warn   node_modules/@react-three/drei/node_modules/@monogrid/gainmap-js
+npm warn     @monogrid/gainmap-js@"^3.0.6" from @react-three/drei@9.122.0
+npm warn     node_modules/@react-three/drei
+npm warn deprecated three-mesh-bvh@0.7.8: Deprecated due to three.js version incompatibility. Please use v0.8.0, instead.
+
+added 204 packages, and audited 205 packages in 14s
+
+33 packages are looking for funding
+  run `npm fund` for details
+
+3 vulnerabilities (1 moderate, 2 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+root@ubuntu-4gb-nbg1-1:~/ARLON/client# npm run build
+
+> arlon-client@1.0.0 build
+> next build
+
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+Failed to compile.
+
+./app/admin/page.js
+Module not found: Can't resolve '../../../store/authStore'
+
+https://nextjs.org/docs/messages/module-not-found
+
+./app/admin/page.js
+Module not found: Can't resolve '../../../lib/api'
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+> Build failed because of webpack errors
+root@ubuntu-4gb-nbg1-1:~/ARLON/client# pm2 start npm --name "arlon-frontend" -- run start -- -p 3000
+[PM2] Starting /usr/bin/npm in fork_mode (1 instance)
+[PM2] Done.
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ arlon-backend      │ fork     │ 15   │ errored   │ 0%       │ 0b       │
+│ 1  │ arlon-frontend     │ fork     │ 0    │ online    │ 0%       │ 21.1mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+root@ubuntu-4gb-nbg1-1:~/ARLON/client# pm2 list
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ arlon-backend      │ fork     │ 15   │ errored   │ 0%       │ 0b       │
+│ 1  │ arlon-frontend     │ fork     │ 15   │ errored   │ 0%       │ 0b       │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+root@ubuntu-4gb-nbg1-1:~/ARLON/client# cd ~/ARLON/server
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# nano .env
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# pm2 restart arlon-backend
+Use --update-env to update environment variables
+[PM2] Applying action restartProcessId on app [arlon-backend](ids: [ 0 ])
+[PM2] [arlon-backend](0) ✓
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ arlon-backend      │ fork     │ 15   │ online    │ 0%       │ 31.2mb   │
+│ 1  │ arlon-frontend     │ fork     │ 15   │ errored   │ 0%       │ 0b       │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# cd ~/ARLON/client
+root@ubuntu-4gb-nbg1-1:~/ARLON/client# pm2 delete arlon-frontend
+[PM2] Applying action deleteProcessId on app [arlon-frontend](ids: [ 1 ])
+[PM2] [arlon-frontend](1) ✓
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ arlon-backend      │ fork     │ 30   │ errored   │ 0%       │ 0b       │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+root@ubuntu-4gb-nbg1-1:~/ARLON/client# pm2 start npm --name "arlon-frontend" -- run dev -- -p 3000
+[PM2] Starting /usr/bin/npm in fork_mode (1 instance)
+[PM2] Done.
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ arlon-backend      │ fork     │ 30   │ errored   │ 0%       │ 0b       │
+│ 2  │ arlon-frontend     │ fork     │ 0    │ online    │ 0%       │ 31.1mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+root@ubuntu-4gb-nbg1-1:~/ARLON/client# pm2 list
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ arlon-backend      │ fork     │ 30   │ errored   │ 0%       │ 0b       │
+│ 2  │ arlon-frontend     │ fork     │ 0    │ online    │ 0%       │ 74.8mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+root@ubuntu-4gb-nbg1-1:~/ARLON/client# pm2 logs arlon-backend --lines 20
+[TAILING] Tailing last 20 lines for [arlon-backend] process (change the value with --lines option)
+/root/.pm2/logs/arlon-backend-out.log last 20 lines:
+/root/.pm2/logs/arlon-backend-error.log last 20 lines:
+0|arlon-ba |     at Module._compile (node:internal/modules/cjs/loader:1705:14) {
+0|arlon-ba |   code: 'MODULE_NOT_FOUND',
+0|arlon-ba |   requireStack: [ '/root/ARLON/server/index.js' ]
+0|arlon-ba | }
+0|arlon-ba | Error: Cannot find module 'dotenv'
+0|arlon-ba | Require stack:
+0|arlon-ba | - /root/ARLON/server/index.js
+0|arlon-ba |     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+0|arlon-ba |     at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+0|arlon-ba |     at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+0|arlon-ba |     at Function._load (node:internal/modules/cjs/loader:1192:37)
+0|arlon-ba |     at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+0|arlon-ba |     at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+0|arlon-ba |     at Module.require (node:internal/modules/cjs/loader:1463:12)
+0|arlon-ba |     at require (node:internal/modules/helpers:147:16)
+0|arlon-ba |     at Object.<anonymous> (/root/ARLON/server/index.js:1:1)
+0|arlon-ba |     at Module._compile (node:internal/modules/cjs/loader:1705:14) {
+0|arlon-ba |   code: 'MODULE_NOT_FOUND',
+0|arlon-ba |   requireStack: [ '/root/ARLON/server/index.js' ]
+0|arlon-ba | }
+
+^C
+root@ubuntu-4gb-nbg1-1:~/ARLON/client# cd ~/ARLON/server
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# npm install
+npm warn deprecated multer@1.4.5-lts.2: Multer 1.x is impacted by a number of vulnerabilities, which have been patched in 2.x. You should upgrade to the latest 2.x version.
+
+added 188 packages, and audited 189 packages in 3s
+
+28 packages are looking for funding
+  run `npm fund` for details
+
+5 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# pm2 restart arlon-backend
+Use --update-env to update environment variables
+[PM2] Applying action restartProcessId on app [arlon-backend](ids: [ 0 ])
+[PM2] [arlon-backend](0) ✓
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ arlon-backend      │ fork     │ 30   │ online    │ 0%       │ 22.9mb   │
+│ 2  │ arlon-frontend     │ fork     │ 0    │ online    │ 0%       │ 76.7mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+root@ubuntu-4gb-nbg1-1:~/ARLON/server# client_loop: send disconnect: Connection reset
+
+
+C:\Users\user># 1. PM2 ning auto-start tizimini yoqish
+'#' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\user>pm2 startup
+'pm2' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\user>ssh root@116.203.110.119
+root@116.203.110.119's password:
+Welcome to Ubuntu 26.04 LTS (GNU/Linux 7.0.0-15-generic aarch64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sun May 31 06:27:49 AM UTC 2026
+
+  System load:  0.07               Processes:             137
+  Usage of /:   10.6% of 37.22GB   Users logged in:       0
+  Memory usage: 28%                IPv4 address for eth0: 116.203.110.119
+  Swap usage:   0%                 IPv6 address for eth0: 2a01:4f8:1c19:80d7::1
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Sun May 31 05:55:59 2026 from 84.54.73.37
+root@ubuntu-4gb-nbg1-1:~# pm2 startup
+[PM2] Init System found: systemd
+Platform systemd
+Template
+[Unit]
+Description=PM2 process manager
+Documentation=https://pm2.keymetrics.io/
+After=network.target
+
+[Service]
+Type=forking
+User=root
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+Environment=PM2_HOME=/root/.pm2
+PIDFile=/root/.pm2/pm2.pid
+Restart=on-failure
+
+ExecStart=/usr/lib/node_modules/pm2/bin/pm2 resurrect
+ExecReload=/usr/lib/node_modules/pm2/bin/pm2 reload all
+ExecStop=/usr/lib/node_modules/pm2/bin/pm2 kill
+
+[Install]
+WantedBy=multi-user.target
+
+Target path
+/etc/systemd/system/pm2-root.service
+Command list
+[ 'systemctl enable pm2-root' ]
+[PM2] Writing init configuration in /etc/systemd/system/pm2-root.service
+[PM2] Making script booting at startup...
+[PM2] [-] Executing: systemctl enable pm2-root...
+Created symlink '/etc/systemd/system/multi-user.target.wants/pm2-root.service' → '/etc/systemd/system/pm2-root.service'.
+[PM2] [v] Command successfully executed.
++---------------------------------------+
+[PM2] Freeze a process list on reboot via:
+$ pm2 save
+
+[PM2] Remove init script via:
+$ pm2 unstartup systemd
+root@ubuntu-4gb-nbg1-1:~# pm2 save
+[PM2] Saving current process list...
+[PM2] Successfully saved in /root/.pm2/dump.pm2
+root@ubuntu-4gb-nbg1-1:~# pm2 list
+┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
+│ id │ name               │ mode     │ ↺    │ status    │ cpu      │ memory   │
+├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
+│ 0  │ arlon-backend      │ fork     │ 30   │ online    │ 0%       │ 97.0mb   │
+│ 2  │ arlon-frontend     │ fork     │ 0    │ online    │ 0%       │ 77.2mb   │
+└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+root@ubuntu-4gb-nbg1-1:~#
+
+
+Windows PowerShell
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Установите последнюю версию PowerShell для новых функций и улучшения! https://aka.ms/PSWindows
+
+PS C:\Users\user> ssh root@116.203.110.119
+root@116.203.110.119's password:
+Connection closed by 116.203.110.119 port 22
+PS C:\Users\user> ssh root@116.203.110.119
+root@116.203.110.119's password:
+Welcome to Ubuntu 26.04 LTS (GNU/Linux 7.0.0-15-generic aarch64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sun May 31 08:53:18 AM UTC 2026
+
+  System load:  0.15               Processes:             140
+  Usage of /:   21.7% of 37.22GB   Users logged in:       0
+  Memory usage: 22%                IPv4 address for eth0: 116.203.110.119
+  Swap usage:   0%                 IPv6 address for eth0: 2a01:4f8:1c19:80d7::1
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Sun May 31 07:18:59 2026 from 84.54.73.37
+root@ubuntu-4gb-nbg1-1:~# cd ~/ARLON
+root@ubuntu-4gb-nbg1-1:~/ARLON# git reset --hard HEAD
+HEAD is now at 66b0190 fix: corrected relative path imports in admin dashboard
+root@ubuntu-4gb-nbg1-1:~/ARLON# git clean -fd
+root@ubuntu-4gb-nbg1-1:~/ARLON# git pull origin main
+From https://github.com/rosegaipnazarova/ARLON
+ * branch            main       -> FETCH_HEAD
+Updating 66b0190..8e32265
+Fast-forward
+ client/package-lock.json | 309 ++++++++++++++++++++++++++++++++++++++++-----------------------------------------------
+ client/package.json      |   6 +-
+ 2 files changed, 146 insertions(+), 169 deletions(-)
+root@ubuntu-4gb-nbg1-1:~/ARLON# docker compose down && docker compose up -d --build
+WARN[0000] /root/ARLON/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+WARN[0000] /root/ARLON/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+[+] Building 107.5s (21/21) FINISHED
+ => [internal] load local bake definitions                                                                         0.0s
+ => => reading from stdin 941B                                                                                     0.0s
+ => [arlon-frontend internal] load build definition from Dockerfile                                                0.0s
+ => => transferring dockerfile: 327B                                                                               0.0s
+ => [arlon-backend internal] load build definition from Dockerfile                                                 0.0s
+ => => transferring dockerfile: 378B                                                                               0.0s
+ => [arlon-backend internal] load metadata for docker.io/library/node:22-alpine                                    0.6s
+ => [arlon-frontend internal] load .dockerignore                                                                   0.0s
+ => => transferring context: 68B                                                                                   0.0s
+ => [arlon-backend internal] load .dockerignore                                                                    0.0s
+ => => transferring context: 2B                                                                                    0.0s
+ => [arlon-frontend 1/6] FROM docker.io/library/node:22-alpine@sha256:968df39aedcea65eeb078fb336ed7191baf48f972b4  0.0s
+ => => resolve docker.io/library/node:22-alpine@sha256:968df39aedcea65eeb078fb336ed7191baf48f972b4479711397108be0  0.0s
+ => [arlon-frontend internal] load build context                                                                   0.0s
+ => => transferring context: 99.68kB                                                                               0.0s
+ => [arlon-backend internal] load build context                                                                    0.1s
+ => => transferring context: 193.79kB                                                                              0.1s
+ => CACHED [arlon-frontend 2/6] WORKDIR /app                                                                       0.0s
+ => [arlon-frontend 3/6] COPY package*.json ./                                                                     0.1s
+ => [arlon-frontend 4/6] RUN npm install                                                                          17.8s
+ => CACHED [arlon-backend 3/5] COPY package*.json ./                                                               0.0s
+ => CACHED [arlon-backend 4/5] RUN npm install                                                                     0.0s
+ => CACHED [arlon-backend 5/5] COPY . .                                                                            0.0s
+ => [arlon-backend] exporting to image                                                                             0.1s
+ => => exporting layers                                                                                            0.0s
+ => => exporting manifest sha256:3da5e0547b2acf96fdd2bf9a007723d9ce0d748765071a8b096495e01f4f3556                  0.0s
+ => => exporting config sha256:5512435fbb0aa6dcd7fd91c3b0a02abce1a8068743d0e402f777b0d04bd1c0ac                    0.0s
+ => => exporting attestation manifest sha256:ecb032e18d7f01641b6ce43202bf44509f5f85d7421f66242d3d817bedfe8d7d      0.0s
+ => => exporting manifest list sha256:b7da679359cf5d4ac7b7ae0a471de85ff0eeffda46f4d39923c1b1d22657942b             0.0s
+ => => naming to docker.io/library/arlon-arlon-backend:latest                                                      0.0s
+ => => unpacking to docker.io/library/arlon-arlon-backend:latest                                                   0.0s
+ => [arlon-backend] resolving provenance for metadata file                                                         0.0s
+ => [arlon-frontend 5/6] COPY . .                                                                                  0.2s
+ => [arlon-frontend 6/6] RUN npm run build                                                                        49.0s
+ => [arlon-frontend] exporting to image                                                                           39.6s
+ => => exporting layers                                                                                           33.2s
+ => => exporting manifest sha256:41840b7f1d559c3b41acbf09e46f6c7136835ab6500d772b755a65bf6b47ea9b                  0.0s
+ => => exporting config sha256:7dfa748a6e1b6101ae1d37414e0305d06a08a14cdfe34419ca8817a5f6b136a7                    0.0s
+ => => exporting attestation manifest sha256:ef31c0a20f08d9747d68103291c6e4fb012e20f57f1a498c49aa32d5e1138af1      0.0s
+ => => exporting manifest list sha256:3ba659257ff9207f6c7452f2a129c96317bf584819fb229877ebde799345e964             0.0s
+ => => naming to docker.io/library/arlon-arlon-frontend:latest                                                     0.0s
+ => => unpacking to docker.io/library/arlon-arlon-frontend:latest                                                  6.3s
+ => [arlon-frontend] resolving provenance for metadata file                                                        0.0s
+[+] up 5/5
+ ✔ Image arlon-arlon-frontend       Built                                                                         107.6s ✔ Image arlon-arlon-backend        Built                                                                         107.6s ✔ Network arlon_default            Created                                                                         0.1s ✔ Container arlon-arlon-backend-1  Started                                                                         0.6s ✔ Container arlon-arlon-frontend-1 Started                                                                         0.6sroot@ubuntu-4gb-nbg1-1:~/ARLON# docker compose ps
+WARN[0000] /root/ARLON/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+NAME                     IMAGE                  COMMAND                  SERVICE          CREATED         STATUS         PORTS
+arlon-arlon-backend-1    arlon-arlon-backend    "docker-entrypoint.s…"   arlon-backend    2 minutes ago   Up 8 seconds   0.0.0.0:5000->5000/tcp, [::]:5000->5000/tcp
+arlon-arlon-frontend-1   arlon-arlon-frontend   "docker-entrypoint.s…"   arlon-frontend   2 minutes ago   Up 2 minutes   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+root@ubuntu-4gb-nbg1-1:~/ARLON#
+root@ubuntu-4gb-nbg1-1:~/ARLON# docker compose logs -f
+WARN[0000] /root/ARLON/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion
+arlon-frontend-1  |
+arlon-frontend-1  | > arlon-client@1.0.0 start
+arlon-frontend-1  | > next start
+arlon-frontend-1  |
+arlon-frontend-1  |   ▲ Next.js 13.5.11
+arlon-frontend-1  |   - Local:        http://localhost:3000
+arlon-frontend-1  |
+arlon-frontend-1  |  ✓ Ready in 673ms
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+docker compose logs -farlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+arlon-backend-1   | ❌ MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND host.docker.internal
+arlon-backend-1   |     at _handleConnectionErrors (/app/node_modules/mongoose/lib/connection.js:816:11)
+arlon-backend-1   |     at NativeConnection.openUri (/app/node_modules/mongoose/lib/connection.js:791:11) {
+arlon-backend-1   |   reason: TopologyDescription {
+arlon-backend-1   |     type: 'Unknown',
+arlon-backend-1   |     servers: Map(1) { 'host.docker.internal:27017' => [ServerDescription] },
+arlon-backend-1   |     stale: false,
+arlon-backend-1   |     compatible: true,
+arlon-backend-1   |     heartbeatFrequencyMS: 10000,
+arlon-backend-1   |     localThresholdMS: 15,
+arlon-backend-1   |     setName: null,
+arlon-backend-1   |     maxElectionId: null,
+arlon-backend-1   |     maxSetVersion: null,
+arlon-backend-1   |     commonWireVersion: 0,
+arlon-backend-1   |     logicalSessionTimeoutMinutes: null
+arlon-backend-1   |   },
+arlon-backend-1   |   code: undefined
+arlon-backend-1   | }
+arlon-backend-1 exited with code 1 (restarting)
+arlon-backend-1   | (node:1) [MONGOOSE] Warning: `collection` is a reserved schema pathname and may break some functionality. You are allowed to use it, but use at your own risk. To disable this warning pass `suppressReservedKeysWarning` as a schema option.
+arlon-backend-1   | (Use `node --trace-warnings ...` to show where the warning was created)
+
+//////////////////////////////////////////////////////////
+
+                  http://116.203.110.119:3000
+
+//////////////////////////////////////////////////////////
